@@ -28,5 +28,4 @@ def fetch_pokemon_data(api_url, params):
         else:
             print(f"Fehler: {response.status_code}")
 
-    df = pd.DataFrame(all_cards)    # Wandelt die gefetchten Daten in eine überschaubare Tabelle um
-    print(df)
+    return all_cards
