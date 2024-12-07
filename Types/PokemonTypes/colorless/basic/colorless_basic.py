@@ -6,4 +6,5 @@ params = {"q": "types:Colorless AND subtypes:Basic AND (regulationMark:F OR regu
 colorless_basic_cards = fetch_pokemon_data(url, params)
 
 df = pd.DataFrame(colorless_basic_cards)
-print(df)
+sort_df = df.sort_values(by="name", ascending=True)
+print(sort_df)
