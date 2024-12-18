@@ -18,6 +18,8 @@ def opponent_reader(file_path):
                 break
 
             # Mache weiter, wenn mindestens 4 Spalten gelesen werden
+            # Hiermit das einlesen leichter gemacht, damit das Deck nicht per Hand leicht angepasst werden muss
+            # siehe Regidrago und Regidrago2 was damit gemeint ist
             if len(row) >= 4:
 
                 number_of_copies = row[0]  # Erste Spalte: Anzahl dieser Karte im Deck
@@ -42,7 +44,7 @@ def opponent_reader(file_path):
 
     return filtered_deckarray_2d
 
-file_path = 'Regidrago.csv' # Wenn im selben Ordner, reicht Dateiname
+file_path = 'Snorlax_Stall.csv'    # Hier Dateiname der CSV-Datei(Da es im selben Ordner ist, reicht Dateiname)
 
 opponent_deck = opponent_reader(file_path)
 
