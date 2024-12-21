@@ -8,7 +8,7 @@ def opponent_reader(file_path):
     # Expansion nur definiert, sodass der Rest leichter einlesbar ist
     deckarray_2d = np.empty((60, 4), dtype=object)
 
-    #Öffnen und Lesen der CSV-Datei
+    # Öffnen und Lesen der CSV-Datei
     with open(file_path, newline='') as csvfile:
         spamreader = csv.reader(csvfile, delimiter=' ') # Der delimiter ist nur ein Leerzeichen
         row_index = 0   # Anfang an der ersten Zeile
